@@ -4,7 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lumina Estética — Coworking Premium</title>
-  <meta name="description" content="Lumina Estética — Coworking Premium em Ipatinga. Salas novas, recepção, marketing e custos fixos inclusos.">
+  <meta name="description" content="Lumina Estética — Coworking Premium em Ipatinga. Salas exclusivas, recepção, marketing e custos fixos inclusos.">
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="Lumina Estética — Coworking Premium em Ipatinga">
+  <meta property="og:description" content="Salas exclusivas, recepção, marketing e estrutura completa. Conheça o Plano Exclusivo de Lançamento.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://luminaesteticaebemestar-cyber.github.io/lumina-site/">
+  <meta property="og:image" content="https://luminaesteticaebemestar-cyber.github.io/lumina-site/images/recepcao.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Lumina Estética — Coworking Premium em Ipatinga">
+  <meta name="twitter:description" content="Salas exclusivas, recepção, marketing e estrutura completa. Conheça o Plano Exclusivo de Lançamento.">
+  <meta name="twitter:image" content="https://luminaesteticaebemestar-cyber.github.io/lumina-site/images/recepcao.jpg">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     :root{--bg:#fbf9f6;--text:#5a4334;--muted:#8a7b6f;--accent:#bfa37a;--line:#ece6dc;--radius:18px;--shadow:0 10px 35px rgba(0,0,0,.10)}
@@ -20,8 +30,8 @@
     .hero h1{font-size:50px}
     .hero p{color:var(--muted);max-width:760px;margin:8px auto 0}
     .cta{display:flex;gap:10px;justify-content:center;margin-top:18px;flex-wrap:wrap}
-    .btn{padding:14px 26px;border-radius:14px;background:var(--accent);color:#fff;font-weight:700;box-shadow:var(--shadow);transition:.25s}
-    .btn:hover{transform:translateY(-2px)}
+    .btn{padding:14px 26px;border-radius:14px;background:var(--accent); color:#fff; font-weight:800; letter-spacing:.2px;box-shadow:var(--shadow);transition:.25s}
+    .btn:hover{transform:translateY(-2px) scale(1.01); box-shadow:0 16px 36px rgba(0,0,0,.14)}
     .btn-outline{padding:14px 26px;border:1px solid var(--accent);border-radius:14px;background:#fff}
 
     /* CARROSSEL */
@@ -45,6 +55,10 @@
     .pricing{grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:22px;margin-top:22px}
     .price{background:#fff;border:1px solid var(--line);border-radius:20px;padding:28px;text-align:center;box-shadow:var(--shadow)}
     .value{font-size:26px;font-weight:800;margin:10px 0}
+    .btn-gold{background:linear-gradient(180deg, #cbb489, #bfa37a); border:1px solid #b79a6f}
+    .btn-gold:hover{filter:brightness(1.04)}
+    @keyframes pulseSoft{0%{transform:scale(1)}50%{transform:scale(1.015)}100%{transform:scale(1)}}
+    .btn-gold:focus-visible{animation:pulseSoft 0.8s ease 1}
 
     /* VISTA */
     .view-block{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px}
@@ -75,7 +89,7 @@
     <h1>Lumina Estética</h1>
     <p>Coworking Premium de Estética em Ipatinga — próximo a faculdades e a apenas 5 minutos do Centro</p>
     <div class="cta">
-      <a href="#contato" class="btn">Quero meu Plano Exclusivo de Lançamento</a>
+      <a href="#contato" class="btn">Quero minha sala no Plano Exclusivo de Lançamento</a>
       <a href="#modelo" class="btn-outline">Ver valores</a>
     </div>
 
@@ -188,13 +202,13 @@
         <h3>Salas com Vista para o Parque</h3>
         <div class="value">Plano Exclusivo de Lançamento: R$ 850/mês + 15%<br>Posteriores: R$ 950/mês + 15%</div>
         <p>Ambientes iluminados, com janelas e vista exclusiva para o parque.</p>
-        <a href="#contato" class="btn">Quero minha sala</a>
+        <a href="#contato" class="btn btn-gold">Quero minha sala</a>
       </div>
       <div class="price">
         <h3>Sala Interna</h3>
         <div class="value">Plano Exclusivo de Lançamento: R$ 750/mês + 15%<br>Posteriores: R$ 850/mês + 15%</div>
         <p>Sala funcional e aconchegante, ideal para personalizar do seu jeito.</p>
-        <a href="#contato" class="btn">Quero minha sala</a>
+        <a href="#contato" class="btn btn-gold">Quero minha sala</a>
       </div>
     </div>
     <p class="lead" style="margin-top:10px"><em>Todos os pacotes já incluem</em> internet, água, energia elétrica, IPTU, taxa de condomínio, taxa de localização e alvará sanitário.</p>
@@ -232,6 +246,7 @@
         <p class="lead">📍 Endereço: Av. Macapá 105, sala 01 — Bairro Veneza — Ipatinga/MG</p>
       </div>
       <form onsubmit="return handleSubmit(event)">
+        <p class="lead" style="margin:0 0 8px 0">✨ Preencha e agende sua visita agora mesmo — garanta sua sala exclusiva.</p>
         <label for="nome">Nome</label>
         <input id="nome" name="nome" required placeholder="Seu nome completo">
         <label for="whats">WhatsApp</label>
@@ -249,7 +264,11 @@
     </div>
   </section>
 
-  <footer>© <script>document.write(new Date().getFullYear())</script> Lumina Estética — Ipatinga, MG.</footer>
+  <footer>© <script>document.write(new Date().getFullYear())</script> Lumina Estética — Ipatinga, MG.
+    <div style="margin-top:6px">
+      Siga no Instagram: <a href="https://instagram.com/luminaestetica.ipatinga" target="_blank">@luminaestetica.ipatinga</a>
+    </div>
+  </footer>
 
   <script>
     // Carrossel com dots + autoplay
