@@ -14,7 +14,6 @@
     img{max-width:100%;display:block}
     a{text-decoration:none;color:inherit}
     section{max-width:1180px;margin:0 auto;padding:72px 20px}
-    /* HERO */
     .hero{position:relative;overflow:hidden;padding:110px 20px 40px;text-align:center;background:radial-gradient(1200px 600px at 50% -10%, #fff, #f7f4ef 60%, #f1ece4)}
     .hero h1{font-size:50px}
     .hero p{color:var(--muted);max-width:760px;margin:8px auto 0}
@@ -22,7 +21,6 @@
     .btn{padding:14px 26px;border-radius:14px;background:var(--accent); color:#fff; font-weight:800; letter-spacing:.2px;box-shadow:var(--shadow);transition:.25s}
     .btn:hover{transform:translateY(-2px) scale(1.01); box-shadow:0 16px 36px rgba(0,0,0,.14)}
     .btn-outline{padding:14px 26px;border:1px solid var(--accent);border-radius:14px;background:#fff}
-    /* CARROSSEL */
     .carousel{position:relative;overflow:hidden;border-radius:22px;box-shadow:var(--shadow);background:#fff;margin-top:24px}
     .track{display:flex;transition:transform .6s cubic-bezier(.22,.61,.36,1)}
     .slide{min-width:100%}
@@ -32,21 +30,17 @@
     .dots{display:flex;gap:6px;justify-content:center;margin:10px 0 14px}
     .dot{width:8px;height:8px;border-radius:50%;background:#d9cdb6}
     .dot.active{background:#8a7b6f}
-    /* GRID/BENEFÍCIOS */
     .grid{display:grid;gap:22px}
     .benefits{grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin-top:22px}
     .card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px;text-align:center;box-shadow:var(--shadow)}
     .icon{width:42px;height:42px;margin:0 auto 10px;display:block;color:#2f2a25}
-    /* PREÇOS */
     .pricing{grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:22px;margin-top:22px}
     .price{background:#fff;border:1px solid var(--line);border-radius:20px;padding:28px;text-align:center;box-shadow:var(--shadow)}
     .value{font-size:26px;font-weight:800;margin:10px 0}
     .btn-gold{background:linear-gradient(180deg, #cbb489, #bfa37a); border:1px solid #b79a6f}
     .btn-gold:hover{filter:brightness(1.04)}
-    /* VISTA */
     .view-block{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px}
     .view-img{border-radius:20px;box-shadow:var(--shadow)}
-    /* CONTATO */
     .contact{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:start}
     form{background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px;box-shadow:var(--shadow)}
     label{display:block;font-weight:600;margin:8px 0 6px}
@@ -54,7 +48,6 @@
     textarea{min-height:110px;resize:vertical}
     .form-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
     .mini{font-size:12px;color:var(--muted)}
-    /* FOOTER */
     footer{text-align:center;padding:36px 20px;font-size:14px;color:var(--muted);border-top:1px solid var(--line)}
     @media (max-width:860px){
       .hero h1{font-size:36px}
@@ -90,83 +83,40 @@
 
   <section>
     <h2>O Espaço Lumina</h2>
-    <p>Além das salas disponíveis para personalização, a Lumina já conta também com um <strong>espaço de esmalteria</strong> e <strong>design de sobrancelhas/cílios</strong>, garantindo movimento e variedade de serviços desde a inauguração.</p>
+    <p>
+      A Lumina nasceu para ser um <strong>endereço de carreira</strong>, não apenas um local de atendimento. 
+      Reunimos arquitetura acolhedora, processos organizados e uma identidade de marca pensada para transmitir 
+      <strong>elegância e confiança</strong> — do primeiro contato no WhatsApp à experiência no ambiente físico.
+    </p>
+    <p>
+      Aqui, você encontra <strong>recepção</strong> para cuidar do fluxo de clientes, <strong>marketing ativo</strong> 
+      (Instagram, Google e tráfego pago) e <strong>custos fixos incluídos</strong> (internet, água, energia elétrica, IPTU, 
+      condomínio, taxa de localização e alvará sanitário). Na personalização das salas, você conta com o 
+      <strong>suporte técnico da arquiteta responsável pela Lumina</strong>, garantindo funcionalidade e harmonia ao seu estilo.
+    </p>
+    <p>
+      Para gerar movimento desde o primeiro dia, a Lumina já conta com um <strong>espaço de esmalteria</strong> e 
+      <strong>design de sobrancelhas/cílios</strong>, ampliando o portfólio de serviços e fortalecendo o fluxo de clientes 
+      para quem vier compor nosso ecossistema.
+    </p>
   </section>
 
   <section>
     <h2>Benefícios</h2>
     <div class="grid benefits">
-      <div class="card">
-        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-          <rect x="4" y="3" width="12" height="18" rx="2"></rect>
-          <rect x="8" y="6" width="4" height="3"></rect>
-          <rect x="8" y="11" width="4" height="3"></rect>
-          <rect x="8" y="16" width="4" height="3"></rect>
-          <rect x="17" y="8" width="3" height="13" rx="1"></rect>
-        </svg>
-        Estrutura pronta e sofisticada
-      </div>
-      <div class="card">
-        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-          <circle cx="8" cy="8" r="3"></circle>
-          <circle cx="16.5" cy="9.5" r="2.5"></circle>
-          <path d="M3 20c0-3 3-5 6-5s6 2 6 5"></path>
-          <path d="M14 20c0-2 2-3.5 4.5-3.5 1.2 0 2.2.3 3 .9"></path>
-        </svg>
-        Recepção para organizar seu fluxo de clientes
-      </div>
-      <div class="card">
-        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-          <path d="M3 11h5l7-4v10l-7-4H3z"></path>
-          <path d="M10 15v3a2 2 0 0 1-2 2H6"></path>
-          <path d="M20 8s1.5 1.5 1.5 4S20 16 20 16"></path>
-        </svg>
-        Marketing digital incluso (Instagram, Google, tráfego pago)
-      </div>
-      <div class="card">
-        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-          <path d="M8 13l3-3a2 2 0 0 1 3 0l.5.5"></path>
-          <path d="M6 12l2 2a2 2 0 0 0 3 0l1-1"></path>
-          <path d="M18 12l-2 2a2 2 0 0 1-3 0l-1-1"></path>
-          <path d="M2 12l4-4"></path>
-          <path d="M22 12l-4-4"></path>
-        </svg>
-        Ambiente colaborativo e networking
-      </div>
-      <div class="card">
-        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-          <circle cx="7.5" cy="8" r="2.5"></circle>
-          <circle cx="16.5" cy="8" r="2.5"></circle>
-          <path d="M2 20c0-3 2.5-5 5.5-5s5.5 2 5.5 5"></path>
-          <path d="M10 20c0-3 2.5-5 5.5-5S21 17 21 20"></path>
-        </svg>
-        Fluxo constante de clientes pela marca Lumina
-      </div>
-      <div class="card">
-        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-          <path d="M4 15c0-2.2 1.8-4 4-4h8"></path>
-          <path d="M6 19h12a2 2 0 0 0 2-2v-3H8a4 4 0 0 0-4 4v1z"></path>
-          <path d="M16 5l2 4"></path>
-          <path d="M12 5l1.5 4"></path>
-          <path d="M8 5l1 4"></path>
-        </svg>
-        Ambiente já ativo com esmalteria e design de sobrancelhas/cílios — ampliando o fluxo de clientes
-      </div>
-      <div class="card">
-        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-          <path d="M2 8a16 16 0 0 1 20 0"></path>
-          <path d="M5 11a11 11 0 0 1 14 0"></path>
-          <path d="M8.5 14a6 6 0 0 1 7 0"></path>
-          <circle cx="12" cy="18" r="1"></circle>
-        </svg>
-        <strong>Custos fixos inclusos</strong>: internet, água, energia elétrica, IPTU, taxa de condomínio, taxa de localização e alvará sanitário
-      </div>
+      <div class="card">Estrutura pronta e sofisticada</div>
+      <div class="card">Recepção para organizar seu fluxo de clientes</div>
+      <div class="card">Marketing digital incluso (Instagram, Google, tráfego pago)</div>
+      <div class="card">Ambiente colaborativo e networking</div>
+      <div class="card">Fluxo constante de clientes pela marca Lumina</div>
+      <div class="card">Ambiente já ativo com esmalteria e design de sobrancelhas/cílios — ampliando o fluxo de clientes</div>
+      <div class="card"><strong>Custos fixos inclusos</strong>: internet, água, energia elétrica, IPTU, taxa de condomínio, taxa de localização e alvará sanitário</div>
     </div>
   </section>
 
   <section>
     <h2>Vista Exclusiva</h2>
-    <p class="lead">Duas salas contam com vista privilegiada para o <strong>Parque Ecológico das Águas (extensão do Parque Ipanema)</strong>.</p>
+    <p>Duas salas contam com vista privilegiada para o <strong>Parque Ecológico das Águas (extensão do Parque Ipanema)</strong>.</p>
     <div class="view-block">
       <img class="view-img" src="images/vista1.jpg" alt="Vista do Parque — foto 1">
       <img class="view-img" src="images/vista2.jpg" alt="Vista do Parque — foto 2">
@@ -189,7 +139,7 @@
         <a href="#contato" class="btn btn-gold">Quero minha sala</a>
       </div>
     </div>
-    <p class="lead" style="margin-top:10px"><em>Todos os pacotes já incluem</em> internet, água, energia elétrica, IPTU, taxa de condomínio, taxa de localização e alvará sanitário.</p>
+    <p><em>Todos os pacotes já incluem</em> internet, água, energia elétrica, IPTU, taxa de condomínio, taxa de localização e alvará sanitário.</p>
   </section>
 
   <section id="faq">
@@ -218,13 +168,12 @@
     <h2>Entre em contato e agende uma visita</h2>
     <div class="contact">
       <div>
-        <p class="lead">📲 WhatsApp: <a href="https://wa.me/5531987590587" target="_blank">(31) 98759-0587</a><br>
+        <p>📲 WhatsApp: <a href="https://wa.me/5531987590587" target="_blank">(31) 98759-0587</a><br>
         📧 E-mail: <a href="mailto:luminaestetica.ipatinga@gmail.com">luminaestetica.ipatinga@gmail.com</a><br>
         📷 Instagram: <a href="https://instagram.com/luminaestetica.ipatinga" target="_blank">@luminaestetica.ipatinga</a></p>
-        <p class="lead">📍 Endereço: Av. Macapá 105, sala 01 — Bairro Veneza — Ipatinga/MG</p>
+        <p>📍 Endereço: Av. Macapá 105, sala 01 — Bairro Veneza — Ipatinga/MG</p>
       </div>
       <form onsubmit="return handleSubmit(event)">
-        <p class="lead" style="margin:0 0 8px 0">✨ Preencha e agende sua visita agora mesmo — garanta sua sala exclusiva.</p>
         <label for="nome">Nome</label>
         <input id="nome" name="nome" required placeholder="Seu nome completo">
         <label for="whats">WhatsApp</label>
@@ -242,11 +191,7 @@
     </div>
   </section>
 
-  <footer>© <script>document.write(new Date().getFullYear())</script> Lumina Estética — Ipatinga, MG.
-    <div style="margin-top:6px">
-      Siga no Instagram: <a href="https://instagram.com/luminaestetica.ipatinga" target="_blank">@luminaestetica.ipatinga</a>
-    </div>
-  </footer>
+  <footer>© <script>document.write(new Date().getFullYear())</script> Lumina Estética — Ipatinga, MG.</footer>
 
   <script>
     let idx=0, timer=null;
