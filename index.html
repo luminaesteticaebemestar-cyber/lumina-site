@@ -5,16 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lumina Estética — Coworking Premium</title>
   <meta name="description" content="Lumina Estética — Coworking Premium em Ipatinga. Salas exclusivas, recepção, marketing e custos fixos inclusos.">
-  <!-- Open Graph / Twitter -->
-  <meta property="og:title" content="Lumina Estética — Coworking Premium em Ipatinga">
-  <meta property="og:description" content="Salas exclusivas, recepção, marketing e estrutura completa. Conheça o Plano Exclusivo de Lançamento.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://luminaesteticaebemestar-cyber.github.io/lumina-site/">
-  <meta property="og:image" content="https://luminaesteticaebemestar-cyber.github.io/lumina-site/images/recepcao.jpg">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Lumina Estética — Coworking Premium em Ipatinga">
-  <meta name="twitter:description" content="Salas exclusivas, recepção, marketing e estrutura completa. Conheça o Plano Exclusivo de Lançamento.">
-  <meta name="twitter:image" content="https://luminaesteticaebemestar-cyber.github.io/lumina-site/images/recepcao.jpg">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     :root{--bg:#fbf9f6;--text:#5a4334;--muted:#8a7b6f;--accent:#bfa37a;--line:#ece6dc;--radius:18px;--shadow:0 10px 35px rgba(0,0,0,.10)}
@@ -24,7 +14,6 @@
     img{max-width:100%;display:block}
     a{text-decoration:none;color:inherit}
     section{max-width:1180px;margin:0 auto;padding:72px 20px}
-
     /* HERO */
     .hero{position:relative;overflow:hidden;padding:110px 20px 40px;text-align:center;background:radial-gradient(1200px 600px at 50% -10%, #fff, #f7f4ef 60%, #f1ece4)}
     .hero h1{font-size:50px}
@@ -33,7 +22,6 @@
     .btn{padding:14px 26px;border-radius:14px;background:var(--accent); color:#fff; font-weight:800; letter-spacing:.2px;box-shadow:var(--shadow);transition:.25s}
     .btn:hover{transform:translateY(-2px) scale(1.01); box-shadow:0 16px 36px rgba(0,0,0,.14)}
     .btn-outline{padding:14px 26px;border:1px solid var(--accent);border-radius:14px;background:#fff}
-
     /* CARROSSEL */
     .carousel{position:relative;overflow:hidden;border-radius:22px;box-shadow:var(--shadow);background:#fff;margin-top:24px}
     .track{display:flex;transition:transform .6s cubic-bezier(.22,.61,.36,1)}
@@ -44,26 +32,20 @@
     .dots{display:flex;gap:6px;justify-content:center;margin:10px 0 14px}
     .dot{width:8px;height:8px;border-radius:50%;background:#d9cdb6}
     .dot.active{background:#8a7b6f}
-
-    /* BENEFÍCIOS */
+    /* GRID/BENEFÍCIOS */
     .grid{display:grid;gap:22px}
     .benefits{grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin-top:22px}
     .card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px;text-align:center;box-shadow:var(--shadow)}
     .icon{width:42px;height:42px;margin:0 auto 10px;display:block;color:#2f2a25}
-
     /* PREÇOS */
     .pricing{grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:22px;margin-top:22px}
     .price{background:#fff;border:1px solid var(--line);border-radius:20px;padding:28px;text-align:center;box-shadow:var(--shadow)}
     .value{font-size:26px;font-weight:800;margin:10px 0}
     .btn-gold{background:linear-gradient(180deg, #cbb489, #bfa37a); border:1px solid #b79a6f}
     .btn-gold:hover{filter:brightness(1.04)}
-    @keyframes pulseSoft{0%{transform:scale(1)}50%{transform:scale(1.015)}100%{transform:scale(1)}}
-    .btn-gold:focus-visible{animation:pulseSoft 0.8s ease 1}
-
     /* VISTA */
     .view-block{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px}
     .view-img{border-radius:20px;box-shadow:var(--shadow)}
-
     /* CONTATO */
     .contact{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:start}
     form{background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px;box-shadow:var(--shadow)}
@@ -72,10 +54,8 @@
     textarea{min-height:110px;resize:vertical}
     .form-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
     .mini{font-size:12px;color:var(--muted)}
-
     /* FOOTER */
     footer{text-align:center;padding:36px 20px;font-size:14px;color:var(--muted);border-top:1px solid var(--line)}
-
     @media (max-width:860px){
       .hero h1{font-size:36px}
       .carousel img{height:340px}
@@ -92,8 +72,6 @@
       <a href="#contato" class="btn">Quero minha sala no Plano Exclusivo de Lançamento</a>
       <a href="#modelo" class="btn-outline">Ver valores</a>
     </div>
-
-    <!-- Carrossel logo no topo -->
     <div class="carousel" aria-label="Galeria Imersiva">
       <div class="track" id="track">
         <div class="slide"><img src="images/recepcao.jpg" alt="Recepção Lumina"></div>
@@ -111,10 +89,14 @@
   </header>
 
   <section>
+    <h2>O Espaço Lumina</h2>
+    <p>Além das salas disponíveis para personalização, a Lumina já conta também com um <strong>espaço de esmalteria</strong> e <strong>design de sobrancelhas/cílios</strong>, garantindo movimento e variedade de serviços desde a inauguração.</p>
+  </section>
+
+  <section>
     <h2>Benefícios</h2>
     <div class="grid benefits">
       <div class="card">
-        <!-- building -->
         <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
           <rect x="4" y="3" width="12" height="18" rx="2"></rect>
           <rect x="8" y="6" width="4" height="3"></rect>
@@ -125,7 +107,6 @@
         Estrutura pronta e sofisticada
       </div>
       <div class="card">
-        <!-- reception / users -->
         <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
           <circle cx="8" cy="8" r="3"></circle>
           <circle cx="16.5" cy="9.5" r="2.5"></circle>
@@ -135,7 +116,6 @@
         Recepção para organizar seu fluxo de clientes
       </div>
       <div class="card">
-        <!-- marketing / megaphone -->
         <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
           <path d="M3 11h5l7-4v10l-7-4H3z"></path>
           <path d="M10 15v3a2 2 0 0 1-2 2H6"></path>
@@ -144,7 +124,6 @@
         Marketing digital incluso (Instagram, Google, tráfego pago)
       </div>
       <div class="card">
-        <!-- parceria / handshake -->
         <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
           <path d="M8 13l3-3a2 2 0 0 1 3 0l.5.5"></path>
           <path d="M6 12l2 2a2 2 0 0 0 3 0l1-1"></path>
@@ -155,7 +134,6 @@
         Ambiente colaborativo e networking
       </div>
       <div class="card">
-        <!-- crowd / fluxo -->
         <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
           <circle cx="7.5" cy="8" r="2.5"></circle>
           <circle cx="16.5" cy="8" r="2.5"></circle>
@@ -165,16 +143,16 @@
         Fluxo constante de clientes pela marca Lumina
       </div>
       <div class="card">
-        <!-- suporte técnico / arquiteta -->
         <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-          <path d="M3 21l6-6"></path>
-          <path d="M15 3l6 6-9 9H6v-6l9-9z"></path>
-          <path d="M13.5 5.5l5 5"></path>
+          <path d="M4 15c0-2.2 1.8-4 4-4h8"></path>
+          <path d="M6 19h12a2 2 0 0 0 2-2v-3H8a4 4 0 0 0-4 4v1z"></path>
+          <path d="M16 5l2 4"></path>
+          <path d="M12 5l1.5 4"></path>
+          <path d="M8 5l1 4"></path>
         </svg>
-        Suporte técnico com a arquiteta da Lumina
+        Ambiente já ativo com esmalteria e design de sobrancelhas/cílios — ampliando o fluxo de clientes
       </div>
       <div class="card">
-        <!-- wifi / custos -->
         <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
           <path d="M2 8a16 16 0 0 1 20 0"></path>
           <path d="M5 11a11 11 0 0 1 14 0"></path>
@@ -271,7 +249,6 @@
   </footer>
 
   <script>
-    // Carrossel com dots + autoplay
     let idx=0, timer=null;
     function updateDots(){
       const dots = document.getElementById('dots');
@@ -290,14 +267,12 @@
       idx = (i+slides.length)%slides.length;
       track.style.transform = `translateX(-${idx*100}%)`;
       updateDots();
-      restartAuto();
+      if(timer){ clearInterval(timer); }
+      timer = setInterval(()=>goTo(idx+1), 5000);
     }
     function moveSlide(step){ goTo(idx+step); }
-    function auto(){ goTo(idx+1); }
-    function restartAuto(){ if(timer) clearInterval(timer); timer = setInterval(auto, 5000); }
-    window.addEventListener('load', ()=>{ updateDots(); restartAuto(); });
+    window.addEventListener('load', ()=>{ updateDots(); timer = setInterval(()=>goTo(idx+1), 5000); });
 
-    // Formulário -> WhatsApp / E-mail
     function handleSubmit(e){
       e.preventDefault();
       const nome = document.getElementById('nome').value.trim();
